@@ -1,0 +1,25 @@
+﻿Process,Tank2,Tank4,Tank7,Tank9,Tank10,Tank11,Tank12,Tank15
+Tank Name,Ultrasonic Degreasing,Alkaline Immersion,Activation,Strike-Nickel,Strike-Nickel,Electroless Ni Plating,Electroless Ni Plating,Antirust Oil
+Chemical,Pakuna RND21,KMnO4,HCl,Ni2+,HCl,Ni2+,NaH2PO2,Top Rust TDIII
+Temperature_Min,50,79,25,25,25,89,89,25
+Temperature_Max,60,85,35,35,35,93,93,35
+Temperature_ID,0,0,0,0,0,0,0,0
+Temperature_Address,0,0,0,0,0,0,0,0
+Concentration_Min,45,200,140,220,31,4.8,25,0
+Concentration_Max,75,204,180,260,45,5.2,35,0
+Concentration_ID,0,0,0,0,0,0,0,0
+Concentration_Address,0,0,0,0,0,0,0,0
+pH_Min,0,0,0,0,0,4.8,4.8,0
+pH_Max,0,0,0,0,0,5,5,0
+pH_ID,0,0,0,0,0,0,0,0
+pH_Address,0,0,0,0,0,0,0,0
+Turn_Min,0,0,0,0,0,0,0,0
+Turn_Max,0,0,0,0,0,3.5,3.5,0
+Turn_ID,0,0,0,0,0,0,0,0
+Turn_Address,0,0,0,0,0,0,0,0
+Ampe_Min,0,0,0,0,0,0,0,0
+Ampe_Max,0,0,0,0,0,1,1,0
+Ampe_ID,0,0,0,0,0,0,0,0
+Ampe_Address,0,0,0,0,0,0,0,0
+Time,1000,1000,1000,1000,1000,1000,1000,1000
+Time_Address,D0,D1,D2,D3,D4,D5,D6,D7
