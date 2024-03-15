@@ -67,8 +67,7 @@ namespace PlatingProcess
             }
             else if (button.Tag.ToString() == "REPAIR")
             {
-                btnRepair.SymbolColor = ActiveColor;
-                sigRepair.BackColor = ActiveColor;
+
             }
             else if (button.Tag.ToString() == "WARNING")
             {
@@ -105,8 +104,6 @@ namespace PlatingProcess
             sigRealTime.BackColor = Color.White;
             btnReport.SymbolColor = Color.Black;
             sigReport.BackColor = Color.White;
-            btnRepair.SymbolColor = Color.Black;
-            sigRepair.BackColor = Color.White;
             btnWarning.SymbolColor = Color.Black;
             sigWarning.BackColor = Color.White;
             btnQuestion.SymbolColor = Color.Black;

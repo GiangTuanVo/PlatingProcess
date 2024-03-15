@@ -33,7 +33,6 @@ namespace PlatingProcess
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnQuestion = new Sunny.UI.UISymbolButton();
             this.btnWarning = new Sunny.UI.UISymbolButton();
-            this.btnRepair = new Sunny.UI.UISymbolButton();
             this.btnReport = new Sunny.UI.UISymbolButton();
             this.btnRealTime = new Sunny.UI.UISymbolButton();
             this.btnSetting = new Sunny.UI.UISymbolButton();
@@ -43,13 +42,14 @@ namespace PlatingProcess
             this.sigSetting = new System.Windows.Forms.Panel();
             this.sigRealTime = new System.Windows.Forms.Panel();
             this.sigReport = new System.Windows.Forms.Panel();
-            this.sigRepair = new System.Windows.Forms.Panel();
             this.sigWarning = new System.Windows.Forms.Panel();
             this.sigQuestion = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.TankLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -59,15 +59,15 @@ namespace PlatingProcess
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.btnQuestion, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.btnWarning, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.btnRepair, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.uiSymbolButton1, 0, 7);
+            this.tableLayoutPanel2.Controls.Add(this.btnQuestion, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.btnWarning, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnReport, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnRealTime, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnSetting, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnHome, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 36);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(36, 36);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 8;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
@@ -76,8 +76,8 @@ namespace PlatingProcess
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(75, 599);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
@@ -92,7 +92,7 @@ namespace PlatingProcess
             this.btnQuestion.FillPressColor = System.Drawing.Color.White;
             this.btnQuestion.FillSelectedColor = System.Drawing.Color.White;
             this.btnQuestion.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.btnQuestion.Location = new System.Drawing.Point(0, 453);
+            this.btnQuestion.Location = new System.Drawing.Point(0, 378);
             this.btnQuestion.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btnQuestion.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnQuestion.Name = "btnQuestion";
@@ -126,7 +126,7 @@ namespace PlatingProcess
             this.btnWarning.FillPressColor = System.Drawing.Color.White;
             this.btnWarning.FillSelectedColor = System.Drawing.Color.White;
             this.btnWarning.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.btnWarning.Location = new System.Drawing.Point(0, 378);
+            this.btnWarning.Location = new System.Drawing.Point(0, 303);
             this.btnWarning.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btnWarning.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnWarning.Name = "btnWarning";
@@ -148,40 +148,6 @@ namespace PlatingProcess
             this.btnWarning.Tag = "WARNING";
             this.btnWarning.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.btnWarning.Click += new System.EventHandler(this.Feature_Click);
-            // 
-            // btnRepair
-            // 
-            this.btnRepair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRepair.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRepair.FillColor = System.Drawing.Color.White;
-            this.btnRepair.FillColor2 = System.Drawing.Color.White;
-            this.btnRepair.FillDisableColor = System.Drawing.Color.White;
-            this.btnRepair.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(230)))), ((int)(((byte)(247)))));
-            this.btnRepair.FillPressColor = System.Drawing.Color.White;
-            this.btnRepair.FillSelectedColor = System.Drawing.Color.White;
-            this.btnRepair.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.btnRepair.Location = new System.Drawing.Point(0, 303);
-            this.btnRepair.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
-            this.btnRepair.MinimumSize = new System.Drawing.Size(1, 1);
-            this.btnRepair.Name = "btnRepair";
-            this.btnRepair.Radius = 0;
-            this.btnRepair.RectColor = System.Drawing.Color.White;
-            this.btnRepair.RectDisableColor = System.Drawing.Color.White;
-            this.btnRepair.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(230)))), ((int)(((byte)(247)))));
-            this.btnRepair.RectPressColor = System.Drawing.Color.White;
-            this.btnRepair.RectSelectedColor = System.Drawing.Color.White;
-            this.btnRepair.Size = new System.Drawing.Size(72, 69);
-            this.btnRepair.Style = Sunny.UI.UIStyle.Custom;
-            this.btnRepair.Symbol = 57397;
-            this.btnRepair.SymbolColor = System.Drawing.Color.Black;
-            this.btnRepair.SymbolHoverColor = System.Drawing.Color.Black;
-            this.btnRepair.SymbolPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(110)))), ((int)(((byte)(190)))));
-            this.btnRepair.SymbolSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(110)))), ((int)(((byte)(190)))));
-            this.btnRepair.SymbolSize = 55;
-            this.btnRepair.TabIndex = 4;
-            this.btnRepair.Tag = "REPAIR";
-            this.btnRepair.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.btnRepair.Click += new System.EventHandler(this.Feature_Click);
             // 
             // btnReport
             // 
@@ -323,7 +289,7 @@ namespace PlatingProcess
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(81, 36);
+            this.panel2.Location = new System.Drawing.Point(111, 36);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1, 599);
             this.panel2.TabIndex = 5;
@@ -335,7 +301,7 @@ namespace PlatingProcess
             this.sigHome.Location = new System.Drawing.Point(3, 3);
             this.sigHome.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.sigHome.Name = "sigHome";
-            this.sigHome.Size = new System.Drawing.Size(2, 69);
+            this.sigHome.Size = new System.Drawing.Size(32, 69);
             this.sigHome.TabIndex = 1;
             // 
             // sigSetting
@@ -345,7 +311,7 @@ namespace PlatingProcess
             this.sigSetting.Location = new System.Drawing.Point(3, 78);
             this.sigSetting.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.sigSetting.Name = "sigSetting";
-            this.sigSetting.Size = new System.Drawing.Size(2, 69);
+            this.sigSetting.Size = new System.Drawing.Size(32, 69);
             this.sigSetting.TabIndex = 2;
             // 
             // sigRealTime
@@ -355,56 +321,46 @@ namespace PlatingProcess
             this.sigRealTime.Location = new System.Drawing.Point(3, 153);
             this.sigRealTime.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.sigRealTime.Name = "sigRealTime";
-            this.sigRealTime.Size = new System.Drawing.Size(2, 69);
+            this.sigRealTime.Size = new System.Drawing.Size(32, 69);
             this.sigRealTime.TabIndex = 3;
             // 
             // sigReport
             // 
-            this.sigReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(110)))), ((int)(((byte)(190)))));
+            this.sigReport.BackColor = System.Drawing.Color.White;
             this.sigReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sigReport.Location = new System.Drawing.Point(3, 228);
             this.sigReport.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.sigReport.Name = "sigReport";
-            this.sigReport.Size = new System.Drawing.Size(2, 69);
+            this.sigReport.Size = new System.Drawing.Size(32, 69);
             this.sigReport.TabIndex = 4;
-            // 
-            // sigRepair
-            // 
-            this.sigRepair.BackColor = System.Drawing.Color.Transparent;
-            this.sigRepair.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sigRepair.Location = new System.Drawing.Point(3, 303);
-            this.sigRepair.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.sigRepair.Name = "sigRepair";
-            this.sigRepair.Size = new System.Drawing.Size(2, 69);
-            this.sigRepair.TabIndex = 5;
             // 
             // sigWarning
             // 
             this.sigWarning.BackColor = System.Drawing.Color.Transparent;
             this.sigWarning.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sigWarning.Location = new System.Drawing.Point(3, 378);
+            this.sigWarning.Location = new System.Drawing.Point(3, 303);
             this.sigWarning.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.sigWarning.Name = "sigWarning";
-            this.sigWarning.Size = new System.Drawing.Size(2, 69);
+            this.sigWarning.Size = new System.Drawing.Size(32, 69);
             this.sigWarning.TabIndex = 6;
             // 
             // sigQuestion
             // 
             this.sigQuestion.BackColor = System.Drawing.Color.Transparent;
             this.sigQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sigQuestion.Location = new System.Drawing.Point(3, 453);
+            this.sigQuestion.Location = new System.Drawing.Point(3, 378);
             this.sigQuestion.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.sigQuestion.Name = "sigQuestion";
-            this.sigQuestion.Size = new System.Drawing.Size(2, 69);
+            this.sigQuestion.Size = new System.Drawing.Size(32, 69);
             this.sigQuestion.TabIndex = 7;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.sigQuestion, 0, 6);
-            this.tableLayoutPanel3.Controls.Add(this.sigWarning, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.sigRepair, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.sigQuestion, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.sigWarning, 0, 4);
             this.tableLayoutPanel3.Controls.Add(this.sigReport, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.sigRealTime, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.sigSetting, 0, 1);
@@ -412,9 +368,7 @@ namespace PlatingProcess
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(1, 36);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 9;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel3.RowCount = 8;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
@@ -422,7 +376,8 @@ namespace PlatingProcess
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(5, 599);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(35, 599);
             this.tableLayoutPanel3.TabIndex = 4;
             // 
             // TankLayout
@@ -430,7 +385,7 @@ namespace PlatingProcess
             this.TankLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TankLayout.Location = new System.Drawing.Point(3, 31);
             this.TankLayout.Name = "TankLayout";
-            this.TankLayout.Size = new System.Drawing.Size(1028, 336);
+            this.TankLayout.Size = new System.Drawing.Size(998, 336);
             this.TankLayout.TabIndex = 6;
             // 
             // tableLayoutPanel1
@@ -441,7 +396,7 @@ namespace PlatingProcess
             this.tableLayoutPanel1.Controls.Add(this.TankLayout, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(82, 36);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(112, 36);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -449,7 +404,7 @@ namespace PlatingProcess
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1034, 599);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1004, 599);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // label1
@@ -462,6 +417,49 @@ namespace PlatingProcess
             this.label1.Size = new System.Drawing.Size(315, 22);
             this.label1.TabIndex = 7;
             this.label1.Text = "TANKS MONITOR DATA REAL TIME";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 527);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(32, 69);
+            this.panel1.TabIndex = 8;
+            // 
+            // uiSymbolButton1
+            // 
+            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiSymbolButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiSymbolButton1.FillColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.FillColor2 = System.Drawing.Color.White;
+            this.uiSymbolButton1.FillDisableColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(230)))), ((int)(((byte)(247)))));
+            this.uiSymbolButton1.FillPressColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.FillSelectedColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolButton1.Location = new System.Drawing.Point(0, 527);
+            this.uiSymbolButton1.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolButton1.Name = "uiSymbolButton1";
+            this.uiSymbolButton1.Radius = 0;
+            this.uiSymbolButton1.RectColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.RectDisableColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(230)))), ((int)(((byte)(247)))));
+            this.uiSymbolButton1.RectPressColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.RectSelectedColor = System.Drawing.Color.White;
+            this.uiSymbolButton1.Size = new System.Drawing.Size(72, 69);
+            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSymbolButton1.Symbol = 116;
+            this.uiSymbolButton1.SymbolColor = System.Drawing.Color.Black;
+            this.uiSymbolButton1.SymbolHoverColor = System.Drawing.Color.Black;
+            this.uiSymbolButton1.SymbolPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(110)))), ((int)(((byte)(190)))));
+            this.uiSymbolButton1.SymbolSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(110)))), ((int)(((byte)(190)))));
+            this.uiSymbolButton1.SymbolSize = 55;
+            this.uiSymbolButton1.TabIndex = 7;
+            this.uiSymbolButton1.Tag = "QUESTION";
+            this.uiSymbolButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // frmMain
             // 
@@ -499,7 +497,6 @@ namespace PlatingProcess
         private System.Windows.Forms.Panel panel2;
         private Sunny.UI.UISymbolButton btnQuestion;
         private Sunny.UI.UISymbolButton btnWarning;
-        private Sunny.UI.UISymbolButton btnRepair;
         private Sunny.UI.UISymbolButton btnReport;
         private Sunny.UI.UISymbolButton btnRealTime;
         private Sunny.UI.UISymbolButton btnSetting;
@@ -507,12 +504,13 @@ namespace PlatingProcess
         private System.Windows.Forms.Panel sigSetting;
         private System.Windows.Forms.Panel sigRealTime;
         private System.Windows.Forms.Panel sigReport;
-        private System.Windows.Forms.Panel sigRepair;
         private System.Windows.Forms.Panel sigWarning;
         private System.Windows.Forms.Panel sigQuestion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel TankLayout;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label1;
+        private Sunny.UI.UISymbolButton uiSymbolButton1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
