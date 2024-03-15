@@ -68,6 +68,12 @@
   <ItemGroup>
     <Compile Include="Connecttion\Modbus.cs" />
     <Compile Include="Connecttion\PLC.cs" />
+    <Compile Include="Controls\Batch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Batch.Designer.cs">
+      <DependentUpon>Batch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ProcessGuide.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <Compile Include="SubForm\frmRealTimeTank.Designer.cs">
       <DependentUpon>frmRealTimeTank.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\Batch.resx">
+      <DependentUpon>Batch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\ProcessGuide.resx">
       <DependentUpon>ProcessGuide.cs</DependentUpon>
     </EmbeddedResource>

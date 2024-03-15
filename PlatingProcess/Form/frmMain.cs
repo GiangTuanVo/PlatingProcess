@@ -17,14 +17,15 @@ namespace PlatingProcess
 {
     public partial class frmMain : UIForm
     {
-        private const int tankWidth = 250;
-        private const int tankHigh = 250;
+        private const int tankWidth = 220;
+        private const int tankHigh = 220;
         DataSet data = new DataSet();
         public frmMain()
         {
             InitializeComponent();
         }
-        Color ActiveColor = Color.FromArgb(16, 110, 190);
+        Color ActiveColor = Color.DeepPink;
+        Color UnActiveColor = Color.FromArgb(16, 110, 190);
         private void frmMain_Load(object sender, EventArgs e)
         {
             DataTable masterLine = new DataTable("masterLine");
@@ -50,7 +51,7 @@ namespace PlatingProcess
                 btnHome.SymbolColor = ActiveColor;
                 sigHome.BackColor = ActiveColor;
             }
-            else if(button.Tag.ToString()=="SETTING")
+            else if (button.Tag.ToString() == "SETTING")
             {
                 btnSetting.SymbolColor = ActiveColor;
                 sigSetting.BackColor = ActiveColor;
@@ -65,19 +66,24 @@ namespace PlatingProcess
                 btnReport.SymbolColor = ActiveColor;
                 sigReport.BackColor = ActiveColor;
             }
-            else if (button.Tag.ToString() == "REPAIR")
-            {
-
-            }
             else if (button.Tag.ToString() == "WARNING")
             {
                 btnWarning.SymbolColor = ActiveColor;
                 sigWarning.BackColor = ActiveColor;
             }
-            else
+            else if (button.Tag.ToString() == "QUESTION")
             {
                 btnQuestion.SymbolColor = ActiveColor;
                 sigQuestion.BackColor = ActiveColor;
+            }
+            else
+            {
+                btnAdd.SymbolColor = ActiveColor;
+                sigAdd.BackColor = ActiveColor;
+                Batch batch = new Batch();
+                batch.BatchName = $"Batch_{DateTime.Now.Ticks}";
+                batch.Height = LayoutAddBatch.Height-6;
+                LayoutAddBatch.Controls.Add(batch);
             }
         }
 
@@ -96,18 +102,20 @@ namespace PlatingProcess
         }
         private void ClearUI()
         {
-            btnHome.SymbolColor = Color.Black;
+            btnHome.SymbolColor = UnActiveColor;
             sigHome.BackColor = Color.White;
-            btnSetting.SymbolColor = Color.Black;
+            btnSetting.SymbolColor = UnActiveColor;
             sigSetting.BackColor = Color.White;
-            btnRealTime.SymbolColor = Color.Black;
+            btnRealTime.SymbolColor = UnActiveColor;
             sigRealTime.BackColor = Color.White;
-            btnReport.SymbolColor = Color.Black;
+            btnReport.SymbolColor = UnActiveColor;
             sigReport.BackColor = Color.White;
-            btnWarning.SymbolColor = Color.Black;
+            btnWarning.SymbolColor = UnActiveColor;
             sigWarning.BackColor = Color.White;
-            btnQuestion.SymbolColor = Color.Black;
+            btnQuestion.SymbolColor = UnActiveColor;
             sigQuestion.BackColor = Color.White;
+            btnAdd.SymbolColor = UnActiveColor;
+            sigAdd.BackColor = Color.White;
         }
     }
 }
